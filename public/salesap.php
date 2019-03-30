@@ -2,7 +2,7 @@
 
 use GuzzleHttp\Client;
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 Class Salesap
 {
@@ -57,23 +57,23 @@ Class Salesap
   **/
 
 
-//$data = array(
-//    'data' =>
-//        array(
-//            'type' => 'contacts',
-//            'attributes' =>
-//                array(
-//                    'first-name' => 'Иван1',
-//                    'last-name' => 'Петров1',
-//                ),
-//        ),
-//);
-//
-//$client = new Salesap();
-//
-//$test = $client->addContact($data);
-//
-//echo "<pre>";
-//print_r($test);
-//echo "</pre>";
+$data = array(
+    'data' =>
+        array(
+            'type' => 'contacts',
+            'attributes' =>
+                array(
+                    'first-name' => 'Иван1',
+                    'last-name' => 'Петров1',
+                ),
+        ),
+);
+
+$client = new Salesap();
+
+$test = $client->addContact($data);
+
+echo "<pre>";
+print_r($test);
+echo "</pre>";
 
